@@ -1,0 +1,63 @@
+{
+  "title": "Taco Braza Preview Menu",
+  "subtitle": "Early signatures from the grill",
+  "sections": [
+    {
+      "name": "Tacos",
+      "items": [
+        {
+          "name": "Carne Asada Taco",
+          "description": "Mesquite-kissed beef, onion, cilantro, salsa tatemada.",
+          "price": "$4.50",
+          "badge": "Signature"
+        },
+        {
+          "name": "Adobada Taco",
+          "description": "Chile-marinated pork with pineapple heat and street-style finish.",
+          "price": "$4.25",
+          "badge": "Popular"
+        },
+        {
+          "name": "Pollo a la Brasa Taco",
+          "description": "Wood-fired chicken, crema, cabbage crunch, lime.",
+          "price": "$4.00",
+          "badge": "New"
+        }
+      ]
+    },
+    {
+      "name": "Brazas & Plates",
+      "items": [
+        {
+          "name": "Asada Plate",
+          "description": "Grilled steak, rice, beans, tortillas, roasted salsa.",
+          "price": "$13.95",
+          "badge": "House Favorite"
+        },
+        {
+          "name": "Sinaloa Combo",
+          "description": "Two tacos, grilled cebollitas, charro beans, and chips.",
+          "price": "$11.50",
+          "badge": "Launch Pick"
+        }
+      ]
+    },
+    {
+      "name": "Sides & Extras",
+      "items": [
+        {
+          "name": "Frijoles Charros",
+          "description": "Smoky northern-style beans finished with herbs.",
+          "price": "$3.50",
+          "badge": "Side"
+        },
+        {
+          "name": "Braza Salsa Flight",
+          "description": "Three house salsas ranging from bright to fire-roasted hot.",
+          "price": "$4.75",
+          "badge": "Add-On"
+        }
+      ]
+    }
+  ]
+}

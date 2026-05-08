@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taco Braza is bringing a cinematic Estilo Sinaloa taco experience to El Paso near Country Club. Join the launch list and preview the menu.">
+  <title>Taco Braza | Coming Soon in El Paso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="hero" aria-labelledby="pageTitle">
+    <div class="hero__media" aria-hidden="true">
+      <img class="hero__poster" src="assets/images/hero-poster.svg" alt="" width="1600" height="1000">
+      <!-- Replace this placeholder path with the final cinematic Taco Braza teaser video when available. -->
+      <video id="heroVideo" class="hero__video" poster="assets/images/hero-poster.svg" autoplay muted loop playsinline preload="metadata">
+        <source src="assets/video/taco-braza-teaser.mp4" type="video/mp4">
+        Your browser does not support the background video. The Taco Braza poster artwork is shown instead.
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__vignette"></div>
+    </div>
+
+    <section class="hero__content" aria-describedby="comingSoonCopy">
+      <p class="eyebrow">El Paso, Texas</p>
+      <h1 id="pageTitle">Taco Braza</h1>
+      <p class="tagline">Estilo Sinaloa. El Paso soul.</p>
+      <p id="comingSoonCopy" class="intro">A cinematic taco experience is coming soon near Country Club.</p>
+
+      <p id="returningMessage" class="returning-message" hidden></p>
+
+      <form id="interestForm" class="launch-form" novalidate>
+        <div class="form-grid">
+          <div class="field-group">
+            <label for="visitorName">Name</label>
+            <input id="visitorName" name="name" type="text" autocomplete="name" placeholder="David Rivera" required minlength="2" aria-describedby="nameHint">
+            <span id="nameHint" class="field-hint">Use at least 2 characters.</span>
+          </div>
+          <div class="field-group">
+            <label for="visitorEmail">Email</label>
+            <input id="visitorEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <button class="button button--primary" type="submit">Join the Launch List</button>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="hero__actions" aria-label="More ways to connect">
+        <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View Preview Menu</a>
+        <nav class="social-links" aria-label="Social media placeholders">
+          <!-- Replace # with final social URLs when Taco Braza accounts are ready. -->
+          <a href="#" aria-label="Taco Braza Instagram placeholder">Instagram</a>
+          <a href="#" aria-label="Taco Braza TikTok placeholder">TikTok</a>
+          <a href="#" aria-label="Taco Braza Facebook placeholder">Facebook</a>
+        </nav>
+      </div>
+
+      <noscript>
+        <p class="noscript-note">This page still works without JavaScript, but the enhanced menu modal and saved launch-list confirmation require JavaScript.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <dialog id="menuModal" class="menu-modal" aria-labelledby="menuModalTitle" aria-describedby="menuModalDescription">
+    <div class="menu-modal__inner">
+      <button id="menuModalClose" class="modal-close" type="button" aria-label="Close preview menu">&times;</button>
+      <p class="eyebrow eyebrow--modal">Preview Menu</p>
+      <h2 id="menuModalTitle">Taco Braza Preview Menu</h2>
+      <p id="menuModalDescription" class="modal-description">Early signatures from the grill, loaded with the Fetch API as a placeholder for future menu data.</p>
+      <div id="menuContent" class="menu-content" tabindex="-1">
+        <p class="menu-status">Choose “View Preview Menu” to load early signatures.</p>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
