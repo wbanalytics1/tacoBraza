@@ -3,75 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Taco Braza is bringing a cinematic Estilo Sinaloa taco experience to El Paso near Country Club. Join the launch list and preview the menu.">
-  <title>Taco Braza | Coming Soon in El Paso</title>
+  <meta name="description" content="Taco Braza is coming soon to El Paso with authentic Mexican tacos, loaded potatoes, carne asada, aguas frescas, and desserts.">
+  <title>Taco Braza | Coming Soon to El Paso</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" defer></script>
 </head>
 <body>
-  <main class="hero" aria-labelledby="pageTitle">
-    <div class="hero__media" aria-hidden="true">
-      <img class="hero__poster" src="assets/images/hero-poster.svg" alt="" width="1600" height="1000">
-      <!-- Replace this placeholder path with the final cinematic Taco Braza teaser video when available. -->
-      <video id="heroVideo" class="hero__video" poster="assets/images/hero-poster.svg" autoplay muted loop playsinline preload="metadata">
-        <source src="assets/video/taco-braza-teaser.mp4" type="video/mp4">
-        Your browser does not support the background video. The Taco Braza poster artwork is shown instead.
-      </video>
-      <div class="hero__overlay"></div>
-      <div class="hero__vignette"></div>
-    </div>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
 
-    <section class="hero__content" aria-describedby="comingSoonCopy">
-      <p class="eyebrow">El Paso, Texas</p>
-      <h1 id="pageTitle">Taco Braza</h1>
-      <p class="tagline">Estilo Sinaloa. El Paso soul.</p>
-      <p id="comingSoonCopy" class="intro">A cinematic taco experience is coming soon near Country Club.</p>
+  <header class="site-header" aria-label="Taco Braza header">
+    <a class="brand-mark" href="#top" aria-label="Taco Braza home">
+      <span class="brand-mark__icon" aria-hidden="true">TB</span>
+      <span>Taco Braza</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#discover">Discover</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Location</a>
+    </nav>
+  </header>
 
-      <p id="returningMessage" class="returning-message" hidden></p>
-
-      <form id="interestForm" class="launch-form" novalidate>
-        <div class="form-grid">
-          <div class="field-group">
-            <label for="visitorName">Name</label>
-            <input id="visitorName" name="name" type="text" autocomplete="name" placeholder="David Rivera" required minlength="2" aria-describedby="nameHint">
-            <span id="nameHint" class="field-hint">Use at least 2 characters.</span>
-          </div>
-          <div class="field-group">
-            <label for="visitorEmail">Email</label>
-            <input id="visitorEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-          </div>
-        </div>
-        <button class="button button--primary" type="submit">Join the Launch List</button>
-        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
-      </form>
-
-      <div class="hero__actions" aria-label="More ways to connect">
-        <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View Preview Menu</a>
-        <nav class="social-links" aria-label="Social media placeholders">
-          <!-- Replace # with final social URLs when Taco Braza accounts are ready. -->
-          <a href="#" aria-label="Taco Braza Instagram placeholder">Instagram</a>
-          <a href="#" aria-label="Taco Braza TikTok placeholder">TikTok</a>
-          <a href="#" aria-label="Taco Braza Facebook placeholder">Facebook</a>
-        </nav>
+  <main id="mainContent">
+    <section id="top" class="hero" aria-labelledby="pageTitle">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__poster" src="assets/images/hero-poster.svg" alt="" width="1600" height="1000">
+        <!-- Replace this placeholder path with the final fire/sparks Taco Braza teaser video when available. -->
+        <video id="heroVideo" class="hero__video" poster="assets/images/hero-poster.svg" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/video/taco-braza-teaser.mp4" type="video/mp4">
+          Your browser does not support the background video. The Taco Braza fire poster artwork is shown instead.
+        </video>
+        <div class="hero__overlay"></div>
       </div>
 
-      <noscript>
-        <p class="noscript-note">This page still works without JavaScript, but the enhanced menu modal and saved launch-list confirmation require JavaScript.</p>
-      </noscript>
+      <div class="hero__content">
+        <p class="brand-kicker">Taco Braza</p>
+        <h1 id="pageTitle">Coming Soon to El Paso</h1>
+        <p class="hero__subtitle">Authentic Mexican Tacos, Potatoes &amp; Carne asada</p>
+        <p id="returningMessage" class="returning-message" hidden></p>
+
+        <form id="interestForm" class="launch-form" novalidate>
+          <h2 class="form-title">Join the launch list</h2>
+          <div class="form-grid">
+            <div class="field-group">
+              <label for="visitorName">Name</label>
+              <input id="visitorName" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2" aria-describedby="nameHint">
+              <span id="nameHint" class="field-hint">Use at least 2 characters.</span>
+            </div>
+            <div class="field-group">
+              <label for="visitorEmail">Email</label>
+              <input id="visitorEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <button class="button button--primary" type="submit">Join the Launch List</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="hero__actions">
+          <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View Preview Menu</a>
+          <a class="button button--ghost" href="#menu">Scroll Full Menu</a>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">This page still displays without JavaScript. The saved launch-list confirmation and enhanced preview-menu modal require JavaScript.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section id="discover" class="section section--discover" aria-labelledby="discoverTitle">
+      <div class="section__inner split-layout">
+        <div>
+          <p class="section-kicker">Fresh fire. Bold flavor.</p>
+          <h2 id="discoverTitle">Discover Taco Braza</h2>
+        </div>
+        <div class="content-card">
+          <h3>Our Menu</h3>
+          <p>Discover authentic Mexican dishes including tacos, our staple loaded potatoes, carne asada by the pound and more. Our menu features fresh ingredients and bold flavors perfect for quick, satisfying meals. Enjoy a vibrant dining experience with every bite.</p>
+          <a class="button button--primary" href="#menu">View Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section section--menu" aria-labelledby="menuTitle">
+      <div class="section__inner">
+        <p class="section-kicker">Sizzle and serve</p>
+        <h2 id="menuTitle">Menu</h2>
+        <div class="menu-grid">
+          <section class="menu-category" aria-labelledby="mainMenuTitle">
+            <div class="menu-category__header">
+              <h3 id="mainMenuTitle">Main</h3>
+              <p>Sinaloa / Sonora Style Carne Asada served in all our classic dishes</p>
+            </div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Steak Taco</h4><p class="price">$3.5</p></div><p>Served with tomato sauce, guacamole, cabbage and red onion.</p><ul><li>Upgrade to flour tortilla +$0.50</li><li>Sirloin $3.5</li><li>Arrachera $4.5</li><li>Order of 4 tacos</li><li>Sirloin $12</li><li>Arrachera $15</li></ul></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Steak Potato</h4><p class="price">$6 - $12</p></div><p>Baked potato filled with your choice of protein, butter, cheese, sour cream, chipotle dressing, bacon and chives.</p><ul><li>1/2 Potato</li><li>$6 Sirloin</li><li>$7 Arrachera</li><li>Full Potato</li><li>$10 Sirloin</li><li>$12 Arrachera</li></ul></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Quesadilla</h4><p class="price">$6</p></div><p>Your choice of tortilla filled with cheese and your choice of protein</p><ul><li>Sirloin $6</li><li>Arrachera $8</li></ul></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Vampiro</h4><p class="price">$7</p></div><p>Your choice of toasted tortilla filled with cheese, your choice of steak and guacamole</p><ul><li>Sirloin $7</li><li>Arrachera $9</li></ul></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Carne Asada by the Pound</h4><p class="price">$12-$25</p></div><p>Your choice of steak with tortillas and salsas</p><ul><li>1/2 Pound</li><li>Sirloin $12</li><li>Arrachera $14</li><li>1 Pound</li><li>Sirloin $21</li><li>Arrachera $25</li></ul></article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="sidesMenuTitle">
+            <div class="menu-category__header"><h3 id="sidesMenuTitle">Sides</h3></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Loaded potato</h4><p class="price">$4</p></div><p>Baked potato with butter cheese and our classic dressings</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Guacamole</h4><p class="price">$4</p></div><p>Our classic guacamole</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Refried Beans</h4><p class="price">$4</p></div><p>Our special recipe of refried beans</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Quesadillas</h4><p class="price">$4</p></div><p>3 corn or 2 Flour Quesadillas (Only cheese)</p></article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="combosMenuTitle">
+            <div class="menu-category__header"><h3 id="combosMenuTitle">Combos</h3><p>Our daily promotions</p></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>COMBO TACOS</h4><p class="price">$13 Sirloin<br>$15 Arrachera</p></div><p>4 Tacos of your choice of Steak + Medium Drink</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>POTATO COMBO</h4><p class="price">$13 Sirloin<br>$15 Arrachera</p></div><p>Full Size Steak Loaded Potato + Medium Size Drink</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>COUPLES COMBO</h4><p class="price">$29 Sirloin<br>$34 Arrachera</p></div><p>1 pound of your choice of steak + 2 Sides of your choice + 2 Medium Size Drinks</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>FAMILY COMBO</h4><p class="price">$57 Sirloin<br>$65 Arrachera</p></div><p>2 Pounds of your choice of steak + 4 Sides of your choice + 4 Small Drinks</p></article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="drinksMenuTitle">
+            <div class="menu-category__header"><h3 id="drinksMenuTitle">Drinks</h3><p>Your choice of Agua Fresca</p></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Small</h4><p class="price">$2</p></div><p>Small Drink</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Medium</h4><p class="price">$3</p></div><p>Medium Size Drink</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Large</h4><p class="price">$4</p></div><p>Large Drink</p></article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="dessertsMenuTitle">
+            <div class="menu-category__header"><h3 id="dessertsMenuTitle">Desserts</h3><p>Desserts daily made by Kazzamia Cake Boutique</p></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Guava Pie</h4><p class="price">$5</p></div><p>Classic Mexican Guava Pie with dulce de leche</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Flan</h4><p class="price">$4</p></div><p>Mexican flan slice</p></article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="section section--location" aria-labelledby="locationTitle">
+      <div class="section__inner split-layout">
+        <div>
+          <p class="section-kicker">4749 North Mesa Street</p>
+          <h2 id="locationTitle">Coming to El Paso TX.</h2>
+          <div class="location-copy">
+            <p><strong>We are so excited to serve El Paso City!</strong></p>
+            <p>We are excited to announce our upcoming opening this year!</p>
+            <p>We will be posting all updates and announcements on our social media!</p>
+          </div>
+          <address class="business-card">
+            <strong>Taco Braza</strong><br>
+            4749 North Mesa Street, El Paso, TX, USA<br>
+            <a href="mailto:Tacobraza@gmail.com">Tacobraza@gmail.com</a>
+          </address>
+          <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&amp;query=4749%20North%20Mesa%20Street%2C%20El%20Paso%2C%20TX%2C%20USA" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="map-card" aria-label="Map for Taco Braza at 4749 North Mesa Street">
+          <iframe title="Google Map showing 4749 North Mesa Street, El Paso, Texas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4749%20North%20Mesa%20Street%2C%20El%20Paso%2C%20TX%2C%20USA&amp;output=embed"></iframe>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <nav class="social-links" aria-label="Social media placeholders">
+      <!-- Replace # with final social URLs when Taco Braza accounts are ready. -->
+      <a href="#" aria-label="Taco Braza Instagram placeholder">Instagram</a>
+      <a href="#" aria-label="Taco Braza TikTok placeholder">TikTok</a>
+      <a href="#" aria-label="Taco Braza Facebook placeholder">Facebook</a>
+    </nav>
+    <p>Copyright © 2026 Taco Braza - All Rights Reserved.</p>
+  </footer>
 
   <dialog id="menuModal" class="menu-modal" aria-labelledby="menuModalTitle" aria-describedby="menuModalDescription">
     <div class="menu-modal__inner">
       <button id="menuModalClose" class="modal-close" type="button" aria-label="Close preview menu">&times;</button>
-      <p class="eyebrow eyebrow--modal">Preview Menu</p>
-      <h2 id="menuModalTitle">Taco Braza Preview Menu</h2>
-      <p id="menuModalDescription" class="modal-description">Early signatures from the grill, loaded with the Fetch API as a placeholder for future menu data.</p>
-      <div id="menuContent" class="menu-content" tabindex="-1">
-        <p class="menu-status">Choose “View Preview Menu” to load early signatures.</p>
+      <p class="section-kicker">Preview Menu</p>
+      <h2 id="menuModalTitle">Taco Braza Menu</h2>
+      <p id="menuModalDescription" class="modal-description">Full launch menu loaded from preview-menu.json with the Fetch API.</p>
+      <div id="menuContent" class="modal-menu-content" tabindex="-1">
+        <p class="menu-status">Choose “View Preview Menu” to load the menu.</p>
       </div>
     </div>
   </dialog>

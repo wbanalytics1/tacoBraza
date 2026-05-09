@@ -57,7 +57,8 @@
   }
 
   function setVisitorCookie() {
-    document.cookie = `${COOKIE_NAME}=1; max-age=${VISITOR_COOKIE_MAX_AGE}; path=/; SameSite=Lax`;
+    const pagePath = window.location.pathname.replace(/\/[^/]*$/, "/") || "/";
+    document.cookie = `${COOKIE_NAME}=1; max-age=${VISITOR_COOKIE_MAX_AGE}; path=${pagePath}; SameSite=Lax`;
   }
 
   function hydrateReturningVisitor() {
@@ -261,21 +262,32 @@
 
   function renderMenu(menu) {
     const sectionsMarkup = menu.sections.map((section) => {
-      const itemsMarkup = section.items.map((item) => `
-        <li class="menu-item">
-          <div class="menu-item__header">
-            <h4>${escapeHtml(item.name)}</h4>
-            <span class="menu-price">${escapeHtml(item.price)}</span>
-          </div>
-          <p>${escapeHtml(item.description)}</p>
-          <span class="menu-badge">${escapeHtml(item.badge)}</span>
-        </li>
-      `).join("");
+      const descriptionMarkup = section.description ? `<p>${escapeHtml(section.description)}</p>` : "";
+      const itemsMarkup = section.items.map((item) => {
+        const detailMarkup = Array.isArray(item.details) && item.details.length
+          ? `<ul>${item.details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul>`
+          : "";
+        const priceMarkup = escapeHtml(item.price).replace(/\n/g, "<br>");
+
+        return `
+          <article class="menu-item">
+            <div class="menu-item__top">
+              <h4>${escapeHtml(item.name)}</h4>
+              <p class="price">${priceMarkup}</p>
+            </div>
+            <p>${escapeHtml(item.description)}</p>
+            ${detailMarkup}
+          </article>
+        `;
+      }).join("");
 
       return `
-        <section class="menu-section" aria-labelledby="${slugify(section.name)}">
-          <h3 id="${slugify(section.name)}">${escapeHtml(section.name)}</h3>
-          <ul class="menu-list">${itemsMarkup}</ul>
+        <section class="menu-category" aria-labelledby="${slugify(section.name)}">
+          <div class="menu-category__header">
+            <h3 id="${slugify(section.name)}">${escapeHtml(section.name)}</h3>
+            ${descriptionMarkup}
+          </div>
+          ${itemsMarkup}
         </section>
       `;
     }).join("");
