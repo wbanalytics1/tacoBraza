@@ -1,155 +1,61 @@
 {
-  "title": "Taco Braza Menu",
-  "subtitle": "Authentic Mexican Tacos, Potatoes & Carne asada",
+  "title": "Taco Braza Preview Menu",
+  "subtitle": "Early signatures from the grill",
   "sections": [
     {
-      "name": "MAIN",
-      "description": "Sinaloa / Sonora Style Carne Asada served in all our classic dishes",
+      "name": "Tacos",
       "items": [
         {
-          "name": "Steak Taco",
-          "price": "$3.5",
-          "description": "Served with tomato sauce, guacamole, cabbage and red onion.",
-          "details": [
-            "Upgrade to flour tortilla +$0.50",
-            "Sirloin $3.5",
-            "Arrachera $4.5",
-            "Order of 4 tacos",
-            "Sirloin $12",
-            "Arrachera $15"
-          ]
+          "name": "Carne Asada Taco",
+          "description": "Mesquite-kissed beef, onion, cilantro, salsa tatemada.",
+          "price": "$4.50",
+          "badge": "Signature"
         },
         {
-          "name": "Steak Potato",
-          "price": "$6 - $12",
-          "description": "Baked potato filled with your choice of protein, butter, cheese, sour cream, chipotle dressing, bacon and chives.",
-          "details": [
-            "1/2 Potato",
-            "$6 Sirloin",
-            "$7 Arrachera",
-            "Full Potato",
-            "$10 Sirloin",
-            "$12 Arrachera"
-          ]
+          "name": "Adobada Taco",
+          "description": "Chile-marinated pork with pineapple heat and street-style finish.",
+          "price": "$4.25",
+          "badge": "Popular"
         },
         {
-          "name": "Quesadilla",
-          "price": "$6",
-          "description": "Your choice of tortilla filled with cheese and your choice of protein",
-          "details": [
-            "Sirloin $6",
-            "Arrachera $8"
-          ]
-        },
-        {
-          "name": "Vampiro",
-          "price": "$7",
-          "description": "Your choice of toasted tortilla filled with cheese, your choice of steak and guacamole",
-          "details": [
-            "Sirloin $7",
-            "Arrachera $9"
-          ]
-        },
-        {
-          "name": "Carne Asada by the Pound",
-          "price": "$12-$25",
-          "description": "Your choice of steak with tortillas and salsas",
-          "details": [
-            "1/2 Pound",
-            "Sirloin $12",
-            "Arrachera $14",
-            "1 Pound",
-            "Sirloin $21",
-            "Arrachera $25"
-          ]
+          "name": "Pollo a la Brasa Taco",
+          "description": "Wood-fired chicken, crema, cabbage crunch, lime.",
+          "price": "$4.00",
+          "badge": "New"
         }
       ]
     },
     {
-      "name": "SIDES",
+      "name": "Brazas & Plates",
       "items": [
         {
-          "name": "Loaded potato",
-          "price": "$4",
-          "description": "Baked potato with butter cheese and our classic dressings"
+          "name": "Asada Plate",
+          "description": "Grilled steak, rice, beans, tortillas, roasted salsa.",
+          "price": "$13.95",
+          "badge": "House Favorite"
         },
         {
-          "name": "Guacamole",
-          "price": "$4",
-          "description": "Our classic guacamole"
-        },
-        {
-          "name": "Refried Beans",
-          "price": "$4",
-          "description": "Our special recipe of refried beans"
-        },
-        {
-          "name": "Quesadillas",
-          "price": "$4",
-          "description": "3 corn or 2 Flour Quesadillas (Only cheese)"
+          "name": "Sinaloa Combo",
+          "description": "Two tacos, grilled cebollitas, charro beans, and chips.",
+          "price": "$11.50",
+          "badge": "Launch Pick"
         }
       ]
     },
     {
-      "name": "COMBOS",
-      "description": "Our daily promotions",
+      "name": "Sides & Extras",
       "items": [
         {
-          "name": "COMBO TACOS",
-          "price": "$13 Sirloin\n$15 Arrachera",
-          "description": "4 Tacos of your choice of Steak + Medium Drink"
+          "name": "Frijoles Charros",
+          "description": "Smoky northern-style beans finished with herbs.",
+          "price": "$3.50",
+          "badge": "Side"
         },
         {
-          "name": "POTATO COMBO",
-          "price": "$13 Sirloin\n$15 Arrachera",
-          "description": "Full Size Steak Loaded Potato + Medium Size Drink"
-        },
-        {
-          "name": "COUPLES COMBO",
-          "price": "$29 Sirloin\n$34 Arrachera",
-          "description": "1 pound of your choice of steak + 2 Sides of your choice + 2 Medium Size Drinks"
-        },
-        {
-          "name": "FAMILY COMBO",
-          "price": "$57 Sirloin\n$65 Arrachera",
-          "description": "2 Pounds of your choice of steak + 4 Sides of your choice + 4 Small Drinks"
-        }
-      ]
-    },
-    {
-      "name": "DRINKS",
-      "description": "Your choice of Agua Fresca",
-      "items": [
-        {
-          "name": "Small",
-          "price": "$2",
-          "description": "Small Drink"
-        },
-        {
-          "name": "Medium",
-          "price": "$3",
-          "description": "Medium Size Drink"
-        },
-        {
-          "name": "Large",
-          "price": "$4",
-          "description": "Large Drink"
-        }
-      ]
-    },
-    {
-      "name": "DESSERTS",
-      "description": "Desserts daily made by Kazzamia Cake Boutique",
-      "items": [
-        {
-          "name": "Guava Pie",
-          "price": "$5",
-          "description": "Classic Mexican Guava Pie with dulce de leche"
-        },
-        {
-          "name": "Flan",
-          "price": "$4",
-          "description": "Mexican flan slice"
+          "name": "Braza Salsa Flight",
+          "description": "Three house salsas ranging from bright to fire-roasted hot.",
+          "price": "$4.75",
+          "badge": "Add-On"
         }
       ]
     }
