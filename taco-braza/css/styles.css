@@ -796,6 +796,36 @@ input[aria-invalid="true"] {
   color: var(--color-accent);
 }
 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  width: fit-content;
+  border-radius: var(--radius-pill);
+  padding: 0.1rem 0.15rem;
+  color: var(--color-accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 110, 29, 0.45);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.24em;
+  transition: color var(--transition), text-decoration-color var(--transition), text-shadow var(--transition), transform var(--transition-smooth);
+}
+
+.social-link::after {
+  content: "↗";
+  font-size: 0.82em;
+  line-height: 1;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  transform: translateY(-1px);
+  color: #fff;
+  text-decoration-color: rgba(255, 137, 64, 0.95);
+  text-shadow: 0 0 1rem rgba(240, 110, 29, 0.35);
+}
+
 .map-card {
   overflow: hidden;
   min-height: 22rem;
@@ -1043,7 +1073,9 @@ input[aria-invalid="true"] {
   .menu-category:hover,
   .menu-category:focus-within,
   .modal-close:hover,
-  .modal-close:focus-visible {
+  .modal-close:focus-visible,
+  .social-link:hover,
+  .social-link:focus-visible {
     transform: none;
   }
 }
