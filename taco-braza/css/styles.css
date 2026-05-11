@@ -875,7 +875,15 @@ input[aria-invalid="true"] {
   color: var(--color-muted);
 }
 
-.instagram-cta {
+.footer-social__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.social-cta {
   position: relative;
   isolation: isolate;
   display: inline-flex;
@@ -898,10 +906,12 @@ input[aria-invalid="true"] {
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+  flex: 1 1 15rem;
+  max-width: 16.6rem;
   transition: transform var(--transition-smooth), border-color var(--transition), box-shadow var(--transition), color var(--transition), background var(--transition);
 }
 
-.instagram-cta::before {
+.social-cta::before {
   position: absolute;
   inset: 1px;
   z-index: -1;
@@ -912,7 +922,7 @@ input[aria-invalid="true"] {
   transition: opacity var(--transition);
 }
 
-.instagram-cta__icon {
+.social-cta__icon {
   display: inline-grid;
   width: 2rem;
   height: 2rem;
@@ -924,14 +934,14 @@ input[aria-invalid="true"] {
   box-shadow: inset 0 0 1rem rgba(240, 110, 29, 0.08);
 }
 
-.instagram-cta__icon svg {
+.social-cta__icon svg {
   width: 1.15rem;
   height: 1.15rem;
   fill: currentColor;
 }
 
-.instagram-cta:hover,
-.instagram-cta:focus-visible {
+.social-cta:hover,
+.social-cta:focus-visible {
   transform: translateY(-2px);
   border-color: rgba(255, 137, 64, 0.86);
   background:
@@ -941,12 +951,12 @@ input[aria-invalid="true"] {
   box-shadow: 0 1.1rem 2.4rem rgba(0, 0, 0, 0.42), 0 0 2rem rgba(240, 110, 29, 0.2);
 }
 
-.instagram-cta:hover::before,
-.instagram-cta:focus-visible::before {
+.social-cta:hover::before,
+.social-cta:focus-visible::before {
   opacity: 1;
 }
 
-.instagram-cta:focus-visible {
+.social-cta:focus-visible {
   outline: 3px solid rgba(255, 137, 64, 0.95);
   outline-offset: 4px;
 }
@@ -1096,9 +1106,15 @@ input[aria-invalid="true"] {
     font-size: 0.9rem;
   }
 
-  .instagram-cta {
+  .footer-social__links {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .social-cta {
     width: 100%;
     max-width: 22rem;
+    justify-self: center;
   }
 }
 
@@ -1170,8 +1186,8 @@ input[aria-invalid="true"] {
   .modal-close:focus-visible,
   .social-link:hover,
   .social-link:focus-visible,
-  .instagram-cta:hover,
-  .instagram-cta:focus-visible {
+  .social-cta:hover,
+  .social-cta:focus-visible {
     transform: none;
   }
 }
