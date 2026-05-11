@@ -158,16 +158,19 @@ main:focus {
 
 .brand-mark {
   min-width: max-content;
+  border-radius: var(--radius-md);
   color: var(--color-text);
   text-decoration: none;
 }
 
-.brand-mark__text {
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 2vw, 1.28rem);
-  letter-spacing: 0.02em;
-  line-height: 1;
-  text-transform: uppercase;
+.brand-mark__logo {
+  width: clamp(6.75rem, 12vw, 8.75rem);
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-md);
+  background: #f3eadf;
+  box-shadow: 0 0.55rem 1.35rem rgba(0, 0, 0, 0.42);
+  object-fit: contain;
 }
 
 .site-nav {
@@ -824,6 +827,10 @@ input[aria-invalid="true"] {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.55rem;
+  }
+
+  .brand-mark__logo {
+    width: 7.25rem;
   }
 
   .site-nav {
