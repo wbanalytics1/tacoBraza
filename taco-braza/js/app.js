@@ -353,8 +353,8 @@
     renderError() {
       this.elements.content.innerHTML = `
         <div class="menu-status" role="status">
-          <p>The preview menu could not load right now, but the launch list is still open.</p>
-          <p>Please try again in a moment or open the JSON preview directly when hosting allows file requests.</p>
+          <p>Our preview menu is unavailable right now, but the launch list is still open.</p>
+          <p>Please try again in a moment or explore the full menu section below.</p>
         </div>
       `;
     },
