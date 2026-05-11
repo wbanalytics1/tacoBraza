@@ -78,23 +78,62 @@
         return;
       }
 
+      const media = video.closest(".hero__media");
       const motionPreference = window.matchMedia(REDUCED_MOTION_QUERY);
+
+      video.addEventListener("playing", () => this.showVideo(video, media));
+      video.addEventListener("error", () => this.showPoster(video, media));
+      video.addEventListener("abort", () => this.showPoster(video, media));
+      video.addEventListener("emptied", () => this.showPoster(video, media));
+
+      if (typeof motionPreference.addEventListener === "function") {
+        motionPreference.addEventListener("change", (event) => {
+          if (event.matches) {
+            video.pause();
+            this.showPoster(video, media);
+          } else {
+            this.tryPlay(video, media);
+          }
+        });
+      }
+
       if (motionPreference.matches) {
-        this.hide(video);
+        this.showPoster(video, media);
         return;
       }
 
-      video.addEventListener("error", () => this.hide(video));
-      video.addEventListener("stalled", () => this.hide(video));
+      this.tryPlay(video, media);
+    },
 
+    tryPlay(video, media) {
+      video.classList.remove("is-hidden");
       const playAttempt = video.play();
-      if (playAttempt && typeof playAttempt.catch === "function") {
-        playAttempt.catch(() => this.hide(video));
+
+      if (playAttempt && typeof playAttempt.then === "function") {
+        playAttempt
+          .then(() => {
+            if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA && !video.paused) {
+              this.showVideo(video, media);
+            }
+          })
+          .catch(() => this.showPoster(video, media));
+      } else if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA && !video.paused) {
+        this.showVideo(video, media);
       }
     },
 
-    hide(video) {
+    showVideo(video, media) {
+      video.classList.remove("is-hidden");
+      if (media) {
+        media.classList.add("is-playing");
+      }
+    },
+
+    showPoster(video, media) {
       video.classList.add("is-hidden");
+      if (media) {
+        media.classList.remove("is-playing");
+      }
     }
   };
 

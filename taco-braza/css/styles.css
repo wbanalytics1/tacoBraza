@@ -244,12 +244,26 @@ main:focus {
 
 .hero__poster {
   filter: saturate(1.28) contrast(1.2) brightness(0.9);
+  object-position: center 72%;
   transform: scale(1.015);
+  transition: opacity 520ms ease, visibility 520ms ease;
 }
 
 .hero__video {
-  opacity: 0.72;
-  transition: opacity 480ms ease, visibility 480ms ease;
+  opacity: 0;
+  object-position: center 72%;
+  transition: opacity 520ms ease, visibility 520ms ease;
+  visibility: hidden;
+}
+
+.hero__media.is-playing .hero__poster {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero__media.is-playing .hero__video {
+  opacity: 0.98;
+  visibility: visible;
 }
 
 .hero__video.is-hidden {
@@ -260,8 +274,8 @@ main:focus {
 .hero__overlay {
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.22) 38%, rgba(0, 0, 0, 0.82) 100%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.12) 48%, rgba(0, 0, 0, 0.68) 100%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.12) 42%, rgba(0, 0, 0, 0.68) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.04) 48%, rgba(0, 0, 0, 0.48) 100%);
 }
 
 .hero__content {
@@ -870,6 +884,12 @@ input[aria-invalid="true"] {
     transition-duration: 1ms !important;
   }
 
+  .hero__media.is-playing .hero__poster {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hero__media.is-playing .hero__video,
   .hero__video {
     visibility: hidden;
     opacity: 0;
