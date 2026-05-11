@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://blobby.wsimg.com">
   <link rel="preconnect" href="https://media.gettyimages.com">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet">
   <style>
-    .skip-link{position:fixed;left:1rem;top:1rem;z-index:1000;transform:translateY(-150%);border-radius:999px;padding:.75rem 1rem;background:#f06e1d;color:#080808;font:800 .85rem/1 Montserrat,Arial,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}.skip-link:focus{transform:translateY(0)}.site-header{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem clamp(1rem,4vw,2rem);background:rgba(0,0,0,.88);color:#fff}.brand-mark,.site-nav a{color:inherit;text-decoration:none}.brand-mark__logo{width:clamp(6.75rem,12vw,8.75rem);height:auto;border-radius:.75rem}.site-nav{display:flex;gap:clamp(.7rem,2vw,1.4rem)}
+    .skip-link{position:fixed;left:1rem;top:1rem;z-index:1000;transform:translateY(-150%);border-radius:999px;padding:.75rem 1rem;background:#f06e1d;color:#080808;font:800 .85rem/1 Archivo,Arial,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}.skip-link:focus{transform:translateY(0)}.site-header{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem clamp(1rem,4vw,2rem);background:rgba(0,0,0,.88);color:#fff}.brand-mark,.site-nav a{color:inherit;text-decoration:none}.brand-mark__logo{width:clamp(6.75rem,12vw,8.75rem);height:auto;border-radius:.75rem}.site-nav{display:flex;gap:clamp(.7rem,2vw,1.4rem)}
   </style>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" defer></script>
@@ -59,7 +59,7 @@
           <span class="hero-title__prefix">Coming Soon to</span>
           <img class="hero-title__wordmark" src="assets/images/el-paso-wordmark.png" alt="EL PASO illustrated wordmark" width="1536" height="1024">
         </h1>
-        <p class="hero__subtitle">Authentic Mexican Tacos, Potatoes &amp; Carne asada</p>
+        <p class="hero__subtitle">Authentic Mexican tacos, loaded potatoes &amp; carne asada</p>
         <p id="returningMessage" class="returning-message" hidden></p>
 
         <form id="interestForm" class="launch-form" novalidate>
@@ -75,13 +75,13 @@
               <input id="visitorEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
             </div>
           </div>
-          <button class="button button--primary" type="submit">Join the Launch List</button>
+          <button class="button button--primary" type="submit">Join the launch list</button>
           <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
         </form>
 
         <div class="hero__actions">
-          <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View Preview Menu</a>
-          <a class="button button--ghost" href="#menu">Scroll Full Menu</a>
+          <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View preview menu</a>
+          <a class="button button--ghost" href="#menu">Scroll full menu</a>
         </div>
 
         <noscript>
@@ -98,8 +98,8 @@
         </div>
         <div class="content-card">
           <h3>Our Menu</h3>
-          <p>Discover authentic Mexican dishes including tacos, our staple loaded potatoes, carne asada by the pound and more. Our menu features fresh ingredients and bold flavors perfect for quick, satisfying meals. Enjoy a vibrant dining experience with every bite.</p>
-          <a class="button button--primary" href="#menu">View Menu</a>
+          <p>Discover authentic Mexican dishes including tacos, our staple loaded potatoes, carne asada by the pound, and more. Our menu features fresh ingredients and bold flavors perfect for quick, satisfying meals. Enjoy a vibrant dining experience with every bite.</p>
+          <a class="button button--primary" href="#menu">View menu</a>
         </div>
       </div>
     </section>
@@ -262,7 +262,7 @@
       <div class="section__inner split-layout">
         <div>
           <p class="section-kicker">4749 North Mesa Street</p>
-          <h2 id="locationTitle">Coming to El Paso TX.</h2>
+          <h2 id="locationTitle">Coming to El Paso, TX</h2>
           <div class="location-copy">
             <p><strong>We are so excited to serve El Paso City!</strong></p>
             <p>We are excited to announce our upcoming opening this year!</p>
@@ -287,17 +287,17 @@
       <h2 id="socialTitle">Social</h2>
       <p>Social updates coming soon.</p>
     </section>
-    <p>Copyright © 2026 Taco Braza - All Rights Reserved.</p>
+    <p>Copyright © 2026 Taco Braza — All rights reserved.</p>
   </footer>
 
   <dialog id="menuModal" class="menu-modal" aria-labelledby="menuModalTitle" aria-describedby="menuModalDescription">
     <div class="menu-modal__inner">
       <button id="menuModalClose" class="modal-close" type="button" aria-label="Close preview menu">&times;</button>
-      <p class="section-kicker">Preview Menu</p>
+      <p class="section-kicker">Preview menu</p>
       <h2 id="menuModalTitle">Taco Braza Menu</h2>
       <p id="menuModalDescription" class="modal-description">A first look at our fire-grilled tacos, loaded potatoes, carne asada, and signature sides.</p>
       <div id="menuContent" class="modal-menu-content" tabindex="-1">
-        <p class="menu-status">Select “View Preview Menu” to see our featured dishes.</p>
+        <p class="menu-status">Select “View preview menu” to see our featured dishes.</p>
       </div>
     </div>
   </dialog>
