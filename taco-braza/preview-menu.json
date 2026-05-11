@@ -1,15 +1,16 @@
 {
   "title": "Taco Braza Menu",
-  "subtitle": "Authentic Mexican Tacos, Potatoes & Carne asada",
+  "subtitle": "Authentic Mexican tacos, potatoes, and carne asada",
   "sections": [
     {
-      "name": "MAIN",
-      "description": "Sinaloa / Sonora Style Carne Asada served in all our classic dishes",
+      "name": "TACOS",
+      "eyebrow": "Sinaloa / Sonora style carne asada",
+      "description": "Classic Taco Braza dishes built around fire-grilled steak, warm tortillas, and house salsas.",
       "items": [
         {
           "name": "Steak Taco",
           "price": "$3.5",
-          "description": "Served with tomato sauce, guacamole, cabbage and red onion.",
+          "description": "Served with tomato sauce, guacamole, cabbage, and red onion.",
           "details": [
             "Upgrade to flour tortilla +$0.50",
             "Sirloin $3.5",
@@ -20,22 +21,9 @@
           ]
         },
         {
-          "name": "Steak Potato",
-          "price": "$6 - $12",
-          "description": "Baked potato filled with your choice of protein, butter, cheese, sour cream, chipotle dressing, bacon and chives.",
-          "details": [
-            "1/2 Potato",
-            "$6 Sirloin",
-            "$7 Arrachera",
-            "Full Potato",
-            "$10 Sirloin",
-            "$12 Arrachera"
-          ]
-        },
-        {
           "name": "Quesadilla",
           "price": "$6",
-          "description": "Your choice of tortilla filled with cheese and your choice of protein",
+          "description": "Your choice of tortilla filled with melted cheese and your choice of protein.",
           "details": [
             "Sirloin $6",
             "Arrachera $8"
@@ -44,7 +32,7 @@
         {
           "name": "Vampiro",
           "price": "$7",
-          "description": "Your choice of toasted tortilla filled with cheese, your choice of steak and guacamole",
+          "description": "Your choice of toasted tortilla with cheese, steak, and guacamole.",
           "details": [
             "Sirloin $7",
             "Arrachera $9"
@@ -53,12 +41,12 @@
         {
           "name": "Carne Asada by the Pound",
           "price": "$12-$25",
-          "description": "Your choice of steak with tortillas and salsas",
+          "description": "Your choice of steak served with tortillas and salsas.",
           "details": [
-            "1/2 Pound",
+            "1/2 pound",
             "Sirloin $12",
             "Arrachera $14",
-            "1 Pound",
+            "1 pound",
             "Sirloin $21",
             "Arrachera $25"
           ]
@@ -66,90 +54,104 @@
       ]
     },
     {
-      "name": "SIDES",
+      "name": "LOADED POTATOES",
+      "description": "Loaded potatoes, guacamole, beans, and cheese-forward sides.",
       "items": [
         {
-          "name": "Loaded potato",
+          "name": "Steak Potato",
+          "price": "$6 - $12",
+          "description": "Baked potato filled with your choice of protein, butter, cheese, sour cream, chipotle dressing, bacon, and chives.",
+          "details": [
+            "1/2 potato",
+            "$6 Sirloin",
+            "$7 Arrachera",
+            "Full potato",
+            "$10 Sirloin",
+            "$12 Arrachera"
+          ]
+        },
+        {
+          "name": "Loaded Potato",
           "price": "$4",
-          "description": "Baked potato with butter cheese and our classic dressings"
+          "description": "Baked potato with butter, cheese, and our classic dressings."
         },
         {
           "name": "Guacamole",
           "price": "$4",
-          "description": "Our classic guacamole"
+          "description": "Our classic guacamole."
         },
         {
           "name": "Refried Beans",
           "price": "$4",
-          "description": "Our special recipe of refried beans"
+          "description": "Our special recipe of refried beans."
         },
         {
           "name": "Quesadillas",
           "price": "$4",
-          "description": "3 corn or 2 Flour Quesadillas (Only cheese)"
+          "description": "Three corn quesadillas or two flour quesadillas with cheese only."
         }
       ]
     },
     {
       "name": "COMBOS",
-      "description": "Our daily promotions",
+      "description": "Daily promotions paired with drinks and sides.",
       "items": [
         {
-          "name": "COMBO TACOS",
+          "name": "Combo Tacos",
           "price": "$13 Sirloin\n$15 Arrachera",
-          "description": "4 Tacos of your choice of Steak + Medium Drink"
+          "description": "Four tacos with your choice of steak and a medium drink."
         },
         {
-          "name": "POTATO COMBO",
+          "name": "Potato Combo",
           "price": "$13 Sirloin\n$15 Arrachera",
-          "description": "Full Size Steak Loaded Potato + Medium Size Drink"
+          "description": "Full-size steak loaded potato with a medium drink."
         },
         {
-          "name": "COUPLES COMBO",
+          "name": "Couples Combo",
           "price": "$29 Sirloin\n$34 Arrachera",
-          "description": "1 pound of your choice of steak + 2 Sides of your choice + 2 Medium Size Drinks"
+          "description": "One pound of your choice of steak, two sides of your choice, and two medium drinks."
         },
         {
-          "name": "FAMILY COMBO",
+          "name": "Family Combo",
           "price": "$57 Sirloin\n$65 Arrachera",
-          "description": "2 Pounds of your choice of steak + 4 Sides of your choice + 4 Small Drinks"
+          "description": "Two pounds of your choice of steak, four sides of your choice, and four small drinks."
         }
       ]
     },
     {
       "name": "DRINKS",
-      "description": "Your choice of Agua Fresca",
+      "description": "Your choice of agua fresca.",
       "items": [
         {
           "name": "Small",
           "price": "$2",
-          "description": "Small Drink"
+          "description": "Small drink."
         },
         {
           "name": "Medium",
           "price": "$3",
-          "description": "Medium Size Drink"
+          "description": "Medium drink."
         },
         {
           "name": "Large",
           "price": "$4",
-          "description": "Large Drink"
+          "description": "Large drink."
         }
       ]
     },
     {
       "name": "DESSERTS",
-      "description": "Desserts daily made by Kazzamia Cake Boutique",
+      "description": "Desserts made daily by Kazzamia Cake Boutique.",
       "items": [
         {
           "name": "Guava Pie",
           "price": "$5",
-          "description": "Classic Mexican Guava Pie with dulce de leche"
+          "description": "Classic Mexican guava pie with dulce de leche."
         },
         {
           "name": "Flan",
           "price": "$4",
-          "description": "Mexican flan slice"
+          "description": "Mexican flan slice."
         }
       ]
     }
