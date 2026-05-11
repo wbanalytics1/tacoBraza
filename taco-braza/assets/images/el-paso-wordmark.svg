@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 300" role="img" aria-labelledby="title desc">
+  <title id="title">El Paso illustrated wordmark</title>
+  <desc id="desc">Original warm Southwest-inspired block-letter wordmark with mountain, desert, agave, sun, and borderland motifs.</desc>
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd36d"/>
+      <stop offset="0.42" stop-color="#f4872c"/>
+      <stop offset="1" stop-color="#b93416"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.45" stop-color="#f06e1d"/>
+      <stop offset="1" stop-color="#641b12"/>
+    </linearGradient>
+    <linearGradient id="desert" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6b24f"/>
+      <stop offset="0.5" stop-color="#dd5b22"/>
+      <stop offset="1" stop-color="#8f2c18"/>
+    </linearGradient>
+    <pattern id="tileDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.8" fill="#ffe2a4" opacity="0.72"/>
+      <circle cx="19" cy="18" r="2.2" fill="#45140d" opacity="0.38"/>
+    </pattern>
+    <filter id="paintShadow" x="-8%" y="-16%" width="116%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.72"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="0" flood-color="#2a0803" flood-opacity="1"/>
+    </filter>
+    <style>
+      .letter{font-family:Impact,'Arial Black','Archivo Black',sans-serif;font-size:205px;font-weight:900;letter-spacing:-7px;paint-order:stroke fill;stroke:#2a0904;stroke-width:18;stroke-linejoin:round;filter:url(#paintShadow)}
+      .inline{font-family:Impact,'Arial Black','Archivo Black',sans-serif;font-size:205px;font-weight:900;letter-spacing:-7px;fill:none;stroke:#ffca69;stroke-width:4;stroke-linejoin:round;opacity:.95}
+      .pin{fill:#ffd36d;stroke:#351006;stroke-width:5;stroke-linejoin:round}
+      .detail{fill:none;stroke:#3a1209;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;opacity:.74}
+    </style>
+    <clipPath id="clipE"><text class="letter" x="16" y="224">E</text></clipPath>
+    <clipPath id="clipL"><text class="letter" x="154" y="224">L</text></clipPath>
+    <clipPath id="clipP"><text class="letter" x="358" y="224">P</text></clipPath>
+    <clipPath id="clipA"><text class="letter" x="505" y="224">A</text></clipPath>
+    <clipPath id="clipS"><text class="letter" x="674" y="224">S</text></clipPath>
+    <clipPath id="clipO"><text class="letter" x="817" y="224">O</text></clipPath>
+  </defs>
+
+  <path d="M33 252 C160 234 244 266 372 248 C506 229 610 262 748 245 C837 234 905 241 950 253" fill="none" stroke="#f06e1d" stroke-width="10" stroke-linecap="round" opacity="0.42"/>
+  <path d="M62 262 C194 247 263 276 397 261 C528 246 612 276 759 258 C845 248 904 253 935 263" fill="none" stroke="#fff0a8" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+
+  <g clip-path="url(#clipE)">
+    <rect x="0" y="0" width="170" height="300" fill="url(#sunset)"/>
+    <path d="M-15 178 L30 130 L63 161 L103 107 L156 178 Z" fill="#34110b" opacity="0.88"/>
+    <path d="M-12 199 C30 174 65 188 100 169 C133 151 156 164 186 148 L186 300 L-12 300 Z" fill="#f2a13c" opacity="0.88"/>
+    <path d="M10 65 H152 M10 111 H151 M10 157 H151" class="detail"/>
+  </g>
+  <g clip-path="url(#clipL)">
+    <rect x="140" y="0" width="176" height="300" fill="url(#desert)"/>
+    <path d="M174 216 C196 170 196 124 180 80 M178 134 C157 112 151 96 153 74 M184 150 C210 130 217 110 216 86" class="detail"/>
+    <path d="M204 230 C213 189 231 160 259 138 C251 179 238 207 204 230Z" fill="#ffd36d" opacity="0.62"/>
+    <rect x="143" y="203" width="180" height="28" fill="#48160c" opacity="0.23"/>
+  </g>
+  <g clip-path="url(#clipP)">
+    <rect x="340" y="0" width="168" height="300" fill="url(#ember)"/>
+    <circle cx="431" cy="90" r="42" fill="#ffe08a" opacity="0.92"/>
+    <path d="M341 171 L378 136 L409 160 L454 115 L506 171 Z" fill="#32110a" opacity="0.86"/>
+    <path d="M362 196 C391 178 426 180 454 158 C477 140 495 144 516 130" class="detail"/>
+    <rect x="350" y="32" width="155" height="225" fill="url(#tileDots)" opacity="0.28"/>
+  </g>
+  <g clip-path="url(#clipA)">
+    <rect x="492" y="0" width="178" height="300" fill="#d94b21"/>
+    <path d="M510 230 C546 173 582 121 628 55 C645 116 648 177 639 234 Z" fill="#ffb347" opacity="0.93"/>
+    <path d="M568 228 C574 177 584 136 602 93 M582 169 C557 147 542 122 536 94 M597 160 C623 134 634 109 638 80" class="detail"/>
+    <path d="M500 74 C548 51 598 52 661 76" fill="none" stroke="#ffe9aa" stroke-width="8" stroke-linecap="round" opacity="0.66"/>
+  </g>
+  <g clip-path="url(#clipS)">
+    <rect x="655" y="0" width="160" height="300" fill="url(#sunset)"/>
+    <path d="M645 111 C687 80 734 85 790 109 M654 177 C704 151 746 155 812 187" class="detail"/>
+    <path d="M670 209 C699 184 737 187 775 157 C795 141 811 137 831 130 L831 300 L670 300 Z" fill="#48160c" opacity="0.3"/>
+    <circle cx="740" cy="71" r="29" fill="#ffe08a" opacity="0.8"/>
+  </g>
+  <g clip-path="url(#clipO)">
+    <rect x="800" y="0" width="170" height="300" fill="url(#desert)"/>
+    <path d="M813 183 L855 135 L888 160 L930 111 L982 183 Z" fill="#2f110b" opacity="0.9"/>
+    <path d="M850 215 C873 184 882 151 878 112 M880 165 C856 150 838 131 828 101 M890 161 C917 142 930 122 936 96" class="detail"/>
+    <path d="M810 50 C847 30 904 31 955 52" fill="none" stroke="#ffe9aa" stroke-width="7" stroke-linecap="round" opacity="0.64"/>
+  </g>
+
+  <g aria-hidden="true">
+    <text class="letter" x="16" y="224" fill="none">E</text>
+    <text class="letter" x="154" y="224" fill="none">L</text>
+    <text class="letter" x="358" y="224" fill="none">P</text>
+    <text class="letter" x="505" y="224" fill="none">A</text>
+    <text class="letter" x="674" y="224" fill="none">S</text>
+    <text class="letter" x="817" y="224" fill="none">O</text>
+    <text class="inline" x="16" y="224">E</text>
+    <text class="inline" x="154" y="224">L</text>
+    <text class="inline" x="358" y="224">P</text>
+    <text class="inline" x="505" y="224">A</text>
+    <text class="inline" x="674" y="224">S</text>
+    <text class="inline" x="817" y="224">O</text>
+  </g>
+
+  <path class="pin" d="M315 98 l16 49 l52 1 l-42 30 l15 50 l-41 -30 l-42 30 l15 -50 l-42 -30 l52 -1 Z" opacity="0.9"/>
+  <path d="M300 114 C306 108 324 107 332 114 M294 188 C311 174 324 174 339 188" fill="none" stroke="#351006" stroke-width="5" stroke-linecap="round" opacity="0.72"/>
+</svg>
