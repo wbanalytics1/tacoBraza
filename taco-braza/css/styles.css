@@ -311,12 +311,29 @@ h4,
 }
 
 h1 {
-  max-width: 12ch;
   margin-bottom: var(--space-4);
   color: #fff;
-  font-size: clamp(3.8rem, 14vw, 10rem);
-  letter-spacing: -0.055em;
   text-shadow: 0 0.16rem 0 rgba(0, 0, 0, 0.9), 0 1.15rem 2.6rem rgba(0, 0, 0, 0.88);
+}
+
+.hero-title {
+  display: grid;
+  justify-items: center;
+  gap: clamp(0.15rem, 1vw, 0.65rem);
+  width: min(100%, 58rem);
+}
+
+.hero-title__prefix {
+  font-size: clamp(2.1rem, 7vw, 5rem);
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+}
+
+.hero-title__wordmark {
+  width: min(100%, 52rem);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0.28rem 0 rgba(0, 0, 0, 0.86)) drop-shadow(0 1.2rem 2.5rem rgba(0, 0, 0, 0.86));
 }
 
 h2 {
