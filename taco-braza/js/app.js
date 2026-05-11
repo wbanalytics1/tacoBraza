@@ -377,6 +377,7 @@
 
     renderSection(section) {
       const sectionId = slugify(section.name || "menu-section");
+      const eyebrowMarkup = section.eyebrow ? `<p class="menu-category__eyebrow">${escapeHtml(section.eyebrow)}</p>` : "";
       const descriptionMarkup = section.description ? `<p>${escapeHtml(section.description)}</p>` : "";
       const items = Array.isArray(section.items) ? section.items : [];
       const itemsMarkup = items.map((item) => this.renderItem(item)).join("");
@@ -384,6 +385,7 @@
       return `
         <section class="menu-category" aria-labelledby="${sectionId}">
           <div class="menu-category__header">
+            ${eyebrowMarkup}
             <h3 id="${sectionId}">${escapeHtml(section.name || "Menu")}</h3>
             ${descriptionMarkup}
           </div>
