@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taco Braza is coming soon to El Paso with authentic Mexican tacos, loaded potatoes, carne asada, aguas frescas, and desserts.">
+  <meta property="og:title" content="Taco Braza | Coming Soon to El Paso">
+  <meta property="og:description" content="Authentic Mexican tacos, loaded potatoes, carne asada, and borderland flavor coming soon to El Paso.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tacobraza.com">
+  <meta property="og:image" content="https://tacobraza.com/assets/images/taco-braza-logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Taco Braza | Coming Soon to El Paso">
+  <meta name="twitter:description" content="Authentic Mexican tacos, loaded potatoes, carne asada, and borderland flavor coming soon to El Paso.">
+  <meta name="twitter:image" content="https://tacobraza.com/assets/images/taco-braza-logo.jpeg">
+  <title>Taco Braza | Coming Soon to El Paso</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/taco-braza-logo.jpeg">
+  <link rel="apple-touch-icon" href="assets/images/taco-braza-logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://blobby.wsimg.com">
+  <link rel="preconnect" href="https://media.gettyimages.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    .skip-link{position:fixed;left:1rem;top:1rem;z-index:1000;transform:translateY(-150%);border-radius:999px;padding:.75rem 1rem;background:#f06e1d;color:#080808;font:800 .85rem/1 Archivo,Arial,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}.skip-link:focus{transform:translateY(0)}.site-header{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem clamp(1rem,4vw,2rem);background:rgba(0,0,0,.88);color:#fff}.brand-mark,.site-nav a{color:inherit;text-decoration:none}.brand-mark__logo{width:clamp(6.75rem,12vw,8.75rem);height:auto;border-radius:.75rem}.site-nav{display:flex;gap:clamp(.7rem,2vw,1.4rem)}
+  </style>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <header class="site-header" aria-label="Taco Braza header">
+    <a class="brand-mark" href="#top" aria-label="Taco Braza home">
+      <img class="brand-mark__logo" src="assets/images/taco-braza-logo.jpeg" alt="Taco Braza" width="600" height="300">
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#discover">Discover</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Location</a>
+    </nav>
+  </header>
+
+  <main id="mainContent" tabindex="-1">
+    <section id="top" class="hero" aria-labelledby="pageTitle">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__poster" src="https://media.gettyimages.com/id/1481628653/video/fire-sparks-from-campfire-over-black-background.jpg?b=1&s=640x640&k=20&c=t5bV89LlCREo9Ei2o1av-6tEVP_E1XpqcDv3GrFvedQ=" alt="" width="1600" height="1000">
+        <!-- Current parity uses the same hosted fire/sparks media as tacobraza.com. If Taco Braza later provides a separately licensed local copy, replace the source below with assets/video/taco-braza-teaser.mp4. -->
+        <video id="heroVideo" class="hero__video" data-local-replacement-src="assets/video/taco-braza-teaser.mp4" poster="https://media.gettyimages.com/id/1481628653/video/fire-sparks-from-campfire-over-black-background.jpg?b=1&s=640x640&k=20&c=t5bV89LlCREo9Ei2o1av-6tEVP_E1XpqcDv3GrFvedQ=" autoplay muted loop playsinline preload="metadata">
+          <source src="https://blobby.wsimg.com/getty/videos/1481628653">
+          Your browser does not support the background video. The Taco Braza fire poster artwork is shown instead.
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="brand-kicker">Taco Braza</p>
+        <h1 id="pageTitle" class="hero-title">
+          <span class="hero-title__prefix">Coming Soon to</span>
+          <img class="hero-title__wordmark" src="assets/images/el-paso-wordmark.png" alt="EL PASO illustrated wordmark" width="1536" height="1024">
+        </h1>
+        <p class="hero__subtitle">Authentic Mexican Tacos, Loaded Potatoes &amp; Carne Asada</p>
+        <p id="returningMessage" class="returning-message" hidden></p>
+
+        <form id="interestForm" class="launch-form" novalidate>
+          <h2 class="form-title">Join the launch list</h2>
+          <div class="form-grid">
+            <div class="field-group">
+              <label for="visitorName">Name</label>
+              <input id="visitorName" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2" aria-describedby="nameHint">
+              <span id="nameHint" class="field-hint">Use at least 2 characters.</span>
+            </div>
+            <div class="field-group">
+              <label for="visitorEmail">Email</label>
+              <input id="visitorEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <button class="button button--primary" type="submit">Join the launch list</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="hero__actions">
+          <a id="previewMenuLink" class="button button--secondary" href="preview-menu.json">View preview menu</a>
+          <a class="button button--ghost" href="#menu">Scroll full menu</a>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">This page still displays without JavaScript. For the smoothest launch-list confirmation and menu preview experience, please enable JavaScript.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section id="discover" class="section section--discover" aria-labelledby="discoverTitle">
+      <div class="section__inner split-layout">
+        <div>
+          <p class="section-kicker">Fresh fire. Bold flavor.</p>
+          <h2 id="discoverTitle">Discover Taco Braza</h2>
+        </div>
+        <div class="content-card">
+          <h3>Our Menu</h3>
+          <p>Discover authentic Mexican dishes including tacos, our staple loaded potatoes, carne asada by the pound, and more. Our menu features fresh ingredients and bold flavors perfect for quick, satisfying meals. Enjoy a vibrant dining experience with every bite.</p>
+          <a class="button button--primary" href="#menu">View menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section section--menu" aria-labelledby="menuTitle">
+      <div class="section__inner">
+        <p class="section-kicker">Sizzle and serve</p>
+        <h2 id="menuTitle">Menu</h2>
+        <div class="menu-grid">
+          <section class="menu-category menu-category--featured" aria-labelledby="tacosMenuTitle">
+            <div class="menu-category__header">
+              <p class="menu-category__eyebrow">Sinaloa / Sonora style carne asada</p>
+              <h3 id="tacosMenuTitle">TACOS</h3>
+              <p>Classic Taco Braza dishes built around fire-grilled steak, warm tortillas, and house salsas.</p>
+            </div>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Steak Taco</h4>
+                <p class="price">$3.5</p>
+              </div>
+              <p>Served with tomato sauce, guacamole, cabbage, and red onion.</p>
+              <ul>
+                <li>Upgrade to flour tortilla +$0.50</li>
+                <li>Sirloin $3.5</li>
+                <li>Arrachera $4.5</li>
+                <li>Order of 4 tacos</li>
+                <li>Sirloin $12</li>
+                <li>Arrachera $15</li>
+              </ul>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Quesadilla</h4>
+                <p class="price">$6</p>
+              </div>
+              <p>Your choice of tortilla filled with melted cheese and your choice of protein.</p>
+              <ul>
+                <li>Sirloin $6</li>
+                <li>Arrachera $8</li>
+              </ul>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Vampiro</h4>
+                <p class="price">$7</p>
+              </div>
+              <p>Your choice of toasted tortilla with cheese, steak, and guacamole.</p>
+              <ul>
+                <li>Sirloin $7</li>
+                <li>Arrachera $9</li>
+              </ul>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Carne Asada by the Pound</h4>
+                <p class="price">$12-$25</p>
+              </div>
+              <p>Your choice of steak served with tortillas and salsas.</p>
+              <ul>
+                <li>1/2 pound</li>
+                <li>Sirloin $12</li>
+                <li>Arrachera $14</li>
+                <li>1 pound</li>
+                <li>Sirloin $21</li>
+                <li>Arrachera $25</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="potatoesMenuTitle">
+            <div class="menu-category__header">
+              <h3 id="potatoesMenuTitle">LOADED POTATOES</h3>
+              <p>Loaded potatoes, guacamole, beans, and cheese-forward sides.</p>
+            </div>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Steak Potato</h4>
+                <p class="price">$6 - $12</p>
+              </div>
+              <p>Baked potato filled with your choice of protein, butter, cheese, sour cream, chipotle dressing, bacon, and chives.</p>
+              <ul>
+                <li>1/2 potato</li>
+                <li>$6 Sirloin</li>
+                <li>$7 Arrachera</li>
+                <li>Full potato</li>
+                <li>$10 Sirloin</li>
+                <li>$12 Arrachera</li>
+              </ul>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Loaded Potato</h4>
+                <p class="price">$4</p>
+              </div>
+              <p>Baked potato with butter, cheese, and our classic dressings.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Guacamole</h4>
+                <p class="price">$4</p>
+              </div>
+              <p>Our classic guacamole.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Refried Beans</h4>
+                <p class="price">$4</p>
+              </div>
+              <p>Our special recipe of refried beans.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h4>Quesadillas</h4>
+                <p class="price">$4</p>
+              </div>
+              <p>Three corn quesadillas or two flour quesadillas with cheese only.</p>
+            </article>
+          </section>
+
+          <section class="menu-category menu-category--featured" aria-labelledby="combosMenuTitle">
+            <div class="menu-category__header">
+              <h3 id="combosMenuTitle">COMBOS</h3>
+              <p>Daily promotions paired with drinks and sides.</p>
+            </div>
+            <article class="menu-item">
+              <div class="menu-item__top"><h4>Combo Tacos</h4><p class="price">$13 Sirloin<br>$15 Arrachera</p></div>
+              <p>Four tacos with your choice of steak and a medium drink.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top"><h4>Potato Combo</h4><p class="price">$13 Sirloin<br>$15 Arrachera</p></div>
+              <p>Full-size steak loaded potato with a medium drink.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top"><h4>Couples Combo</h4><p class="price">$29 Sirloin<br>$34 Arrachera</p></div>
+              <p>One pound of your choice of steak, two sides of your choice, and two medium drinks.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top"><h4>Family Combo</h4><p class="price">$57 Sirloin<br>$65 Arrachera</p></div>
+              <p>Two pounds of your choice of steak, four sides of your choice, and four small drinks.</p>
+            </article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="drinksMenuTitle">
+            <div class="menu-category__header"><h3 id="drinksMenuTitle">DRINKS</h3><p>Your choice of agua fresca.</p></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Small</h4><p class="price">$2</p></div><p>Small drink.</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Medium</h4><p class="price">$3</p></div><p>Medium drink.</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Large</h4><p class="price">$4</p></div><p>Large drink.</p></article>
+          </section>
+
+          <section class="menu-category" aria-labelledby="dessertsMenuTitle">
+            <div class="menu-category__header"><h3 id="dessertsMenuTitle">DESSERTS</h3><p>Desserts made daily by Kazzamia Cake Boutique.</p></div>
+            <article class="menu-item"><div class="menu-item__top"><h4>Guava Pie</h4><p class="price">$5</p></div><p>Classic Mexican guava pie with dulce de leche.</p></article>
+            <article class="menu-item"><div class="menu-item__top"><h4>Flan</h4><p class="price">$4</p></div><p>Mexican flan slice.</p></article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="section section--location" aria-labelledby="locationTitle">
+      <div class="section__inner split-layout">
+        <div>
+          <p class="section-kicker">4749 North Mesa Street</p>
+          <h2 id="locationTitle">Coming to El Paso, TX</h2>
+          <div class="location-copy">
+            <p><strong>We are so excited to serve El Paso City!</strong></p>
+            <p>We are excited to announce our upcoming opening this year!</p>
+            <p>We will be posting all updates and announcements on our social media!</p>
+          </div>
+          <address class="business-card">
+            <strong>Taco Braza</strong><br>
+            4749 North Mesa Street, El Paso, TX, USA<br>
+            <a href="mailto:Tacobraza@gmail.com">Tacobraza@gmail.com</a>
+          </address>
+          <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&amp;query=4749%20North%20Mesa%20Street%2C%20El%20Paso%2C%20TX%2C%20USA" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="map-card" aria-label="Map for Taco Braza at 4749 North Mesa Street">
+          <iframe title="Google Map showing 4749 North Mesa Street, El Paso, Texas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4749%20North%20Mesa%20Street%2C%20El%20Paso%2C%20TX%2C%20USA&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-social" aria-labelledby="socialTitle">
+      <h2 id="socialTitle">CONNECT WITH US</h2>
+      <p class="footer-social__support">Follow Taco Braza for launch updates, first looks, and fire-grilled previews.</p>
+      <div class="footer-social__links" aria-label="Taco Braza social profiles">
+        <a class="social-cta instagram-cta" href="https://www.instagram.com/tacobraza/" target="_blank" rel="noopener noreferrer" aria-label="Follow Taco Braza on Instagram at tacobraza">
+          <span class="social-cta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm8.7 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+            </svg>
+          </span>
+          <span>Follow @tacobraza</span>
+        </a>
+        <a class="social-cta tiktok-cta" href="https://www.tiktok.com/@taco.braza" target="_blank" rel="noopener noreferrer" aria-label="Follow Taco Braza on TikTok at taco dot braza">
+          <span class="social-cta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6 2c.28 2.42 1.63 3.86 3.9 4.01v3.18c-1.32.13-2.48-.3-3.8-1.1v5.95c0 7.55-8.24 9.91-11.55 4.5-2.13-3.49-.82-9.62 6-9.87V12c-.43.07-.89.18-1.31.32-1.26.43-1.97 1.22-1.77 2.62.38 2.68 5.3 3.47 4.89-1.76V2.01h3.64Z"/>
+            </svg>
+          </span>
+          <span>Follow @taco.braza</span>
+        </a>
+      </div>
+    </section>
+    <p>Copyright © 2026 Taco Braza — All rights reserved.</p>
+  </footer>
+
+  <dialog id="menuModal" class="menu-modal" aria-labelledby="menuModalTitle" aria-describedby="menuModalDescription">
+    <div class="menu-modal__inner">
+      <button id="menuModalClose" class="modal-close" type="button" aria-label="Close preview menu">&times;</button>
+      <p class="section-kicker">Preview menu</p>
+      <h2 id="menuModalTitle">Taco Braza Menu</h2>
+      <p id="menuModalDescription" class="modal-description">A first look at our fire-grilled tacos, loaded potatoes, carne asada, and signature sides.</p>
+      <div id="menuContent" class="modal-menu-content" tabindex="-1">
+        <p class="menu-status">Select “View preview menu” to see our featured dishes.</p>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
